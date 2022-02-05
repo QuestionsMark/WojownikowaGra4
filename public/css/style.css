@@ -1,0 +1,56 @@
+html {
+    font-family: arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.link {
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.link:hover {
+    background-color: #eee;
+    text-decoration: underline;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.image-wrapper {
+    width: 250px;
+    overflow: hidden;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.warriors {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+}

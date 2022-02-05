@@ -1,0 +1,32 @@
+<div class="arena">
+    <h1>Arena Walk</h1>
+    <form id="arena">
+        <label>
+            Wybierz 1 wojownika
+            <select id="warrior1">
+                <option value="">Brak</option>
+                {{#each warriors}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </label>
+        <label>
+            Wybierz 2 wojownika
+            <select id="warrior2">
+                <option value="">Brak</option>
+                {{#each warriors}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </label>
+        <button type="submit">Walka</button>
+    </form>
+    <div class="warriors">
+        <div id="warrior1Container"></div>
+        <div id="vs"></div>
+        <div id="warrior2Container"></div>
+    </div>
+    <div id="logs"></div>
+    <strong id="winner"></strong>
+</div>
+<script src="/js/arena.js"></script>

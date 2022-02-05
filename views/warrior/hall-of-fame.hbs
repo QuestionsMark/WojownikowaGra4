@@ -1,0 +1,16 @@
+<div class="hall-of-fame">
+    <h1>Sala Sław</h1>
+    <ul class="list">
+        {{#each warriors}}
+        <li class="item">
+            <div class="image-wrapper">
+                <img src="/images/warrior.png" alt="Potężny Wojownik" class="img">
+            </div>
+            <h2 class="item__title">{{this.name}}</h2>
+            <p class="item__info">Stoczone walki: {{this.fights}}</p>
+            <p class="item__info">Wygrane: {{this.wins}}</p>
+            <p class="item__info">Współczynnik wygranych: {{getPercentage this.fights this.wins}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</div>
